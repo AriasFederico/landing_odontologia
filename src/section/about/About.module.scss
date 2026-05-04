@@ -1,0 +1,79 @@
+@use '../../config.module' as *;
+
+.about {
+    padding: 6rem $space-2;
+
+    .container {
+        max-width: 1152px;
+        margin: 0 auto;
+
+        @include for-tablet(){
+            display: flex;
+            align-items: center;
+            gap: $space-4;
+        }
+    }
+
+    .media {
+        position: relative;
+        width: 100%;
+        flex: 1;
+    }
+    
+    .image {
+        width: 100%;
+        object-fit: cover;
+        max-height: 40rem;
+        border-radius: $space-3;
+        
+        @include for-tablet(){
+            max-width: 520px;
+            max-height: 100%;
+        }
+    }
+    
+    .exp_absolute {
+        position: absolute;
+        bottom: -$space-3;
+        right: 5rem;
+        border-radius: $space-2;
+        color: $color-primary;
+        background-color: $white;
+        max-width: 13.75rem;  // pasar a REM
+        padding: $space-2 $space-3;
+        box-shadow: $box-shadow;
+    }
+    
+    .exp {
+        color: $color-primary;
+        font-size: $font-2xl;
+    }
+    
+    .exp_text {
+        margin-top: $space-1;
+        color: $color-gray-900;
+        font-size: $font-sm;
+    }
+    
+    .content {
+        // flex: 1;
+        flex: 1;
+        margin-top: $space-8;
+    }
+    
+    .text {
+        color: $color-gray-900;
+        line-height: 1.7;
+    }
+
+    .features_container {
+        margin-top: $space-6;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: $space-2;
+        // display: flex;
+        // flex-direction: column;
+        // gap: $space-2;
+    }
+
+}

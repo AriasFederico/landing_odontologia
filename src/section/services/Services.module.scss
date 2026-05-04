@@ -1,0 +1,35 @@
+@use '../../config.module' as *;
+
+.services {
+    padding: 6rem $space-2;
+    background-color: $white;
+
+    &Container {
+        margin: 0 auto;
+        max-width: 1152px;
+
+        &__header {
+            text-align: center;
+        }
+
+        &__text {
+            color: $color-gray-900;
+            font-size: 18px;
+            max-width: 600px;
+            margin: $space-3 auto 0;
+        }
+
+        &__items {
+            margin-top: $space-6;
+
+
+            @include for-tablet(){
+                display: grid;
+                justify-content: center;
+                grid-template-columns: 33% 33% 33%;
+                gap: $space-2;
+            }
+        }
+
+    }
+}

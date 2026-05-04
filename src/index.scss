@@ -1,0 +1,21 @@
+@use './config.module' as *;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4 {
+  font-family: "Playfair Display", serif;
+}
+
+a ,p {
+    font-family: "Inter", serif;
+}
+
+a {
+    color: $color-foreground;
+}

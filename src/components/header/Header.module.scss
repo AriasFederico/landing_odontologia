@@ -1,0 +1,18 @@
+@use '../../config.module' as *;
+
+.header {
+    background-color: transparent;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+    padding: $space-1;
+
+    &Container {
+        max-width: 1152px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}

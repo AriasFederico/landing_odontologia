@@ -1,0 +1,17 @@
+@use '../../config.module' as *;
+
+.expCard {
+    margin-top: $space-5;
+
+    &Number {
+        font-size: 30px;
+        font-family: "PlayFair Display", serif;
+        font-weight: 600;
+    }
+
+    &Text {
+        margin-top: $space-1;
+        font-size: 14px;
+        color: $color-gray-900;
+    }
+}

@@ -1,0 +1,31 @@
+@use '../../config.module' as *;
+
+.cta {
+    background-color: $color-primary;
+    color: $white;
+    padding: 12px 32px;
+    display: inline-block;
+    border: 1px solid transparent;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: $space-4;
+    transition: all .3s ease;
+
+    &:hover {
+        background-color: $color-primary-90;
+    }
+    
+    // estilos agregados -------------------
+}
+
+.secondary {
+    // estilos agregados -------------------
+    background-color: transparent;
+    color: black;
+    border-color: $color-border;
+
+    &:hover {
+        background-color: #f4f4f5;
+        color: $color-primary;
+    }
+}

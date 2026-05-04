@@ -1,0 +1,31 @@
+@use '../../config.module' as *;
+
+.nav {
+    padding: 16px;
+    font-size: 16px;
+    // variant: bg-dark / bg-transparent = cambios más típicos
+    // customClass: empresa-1 = cambios más especificos
+    // ---------------------- estilos agregados abajo
+}
+
+.ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    // ---------------------- estilos agregados abajo
+
+    // &-variant {}
+}
+
+.li {
+    a {
+        text-decoration: none;        
+        // ---------------------- estilos agregados abajo
+        &:visited {
+        }
+        &:hover {
+        }
+    }
+}
+
+// .customClass {}

@@ -1,0 +1,23 @@
+@use '../../config.module' as *;
+
+.title {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 1rem;
+    color: $color-foreground;
+
+    @include for-tablet(){
+        font-size: 72px;
+    }
+}
+
+.subtitle {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 1rem;
+    color: $color-foreground;
+}
+
+.span {
+    color: $color-primary;
+}

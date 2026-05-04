@@ -1,0 +1,47 @@
+@use '../../config.module' as *;
+
+.card {
+    padding: 2rem;
+    border: 1px solid $color-border;
+    border-radius: $space-2;
+    // max-width: 23rem;
+    background-color: white;
+    transition: all .3s ease;
+    margin-bottom: $space-2;
+
+    @include for-tablet(){
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        border-color: $color-primary-90;
+
+        .icon {
+            color: white;
+            background-color: $color-primary;
+        }
+    }
+}
+
+.icon {
+    width: 2.3rem;
+    height: 2.3rem;
+    padding: .5rem;
+    border-radius: $space-1;
+    background-color: $color-primary-alpha;
+    color: $color-primary;
+    margin-bottom: 1rem;
+    transition: all .3s ease;
+}
+
+.title {
+    font-size: $font-lg;
+    margin-bottom: 1rem;
+    color: $color-foreground;
+}
+
+.text {
+    line-height: 1.7;
+    font-size: $font-sm;
+    color: $color-gray-900;
+}

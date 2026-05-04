@@ -1,0 +1,33 @@
+@use '../../config.module' as *;
+
+.testimonies {
+    padding: 6rem $space-2;
+
+    .container {
+        max-width: 1152px;
+        margin: 0 auto;
+
+        @include for-tablet(){
+            display: flex;
+            align-items: flex-start;
+            gap: $space-4;
+        }
+    }
+
+    .content {
+
+    }
+
+    .items {
+        margin-top: $space-4;
+    }
+
+    .image {
+        margin-top: $space-4;
+        width: 100%;
+        border-radius: $space-3;
+        @include for-tablet(){
+            margin: 0;
+        }
+    }
+}

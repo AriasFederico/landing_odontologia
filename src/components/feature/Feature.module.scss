@@ -1,0 +1,20 @@
+@use '../../config.module' as *;
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: $space-1;
+    font-family: "Inter",serif;
+
+
+    .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        color: $color-primary;
+    }
+
+    .span {
+        font-size: $font-sm;
+        color: $color-foreground;
+    }
+}
