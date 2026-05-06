@@ -5,6 +5,7 @@ import {
 	CTASection,
 	Footer,
 	Home,
+	MapSection,
 	Services,
 	Testimonies,
 } from './section';
@@ -21,8 +22,10 @@ function App() {
 			<About />
 			<Testimonies />
 			<CTASection cta={WHATSAPP_URL} />
+			<MapSection direccion={'-34.925527, -57.971450'} />
 			<Footer name={'DentalCare'} />
 			<CtaWhatsApp url={WHATSAPP_URL} />
+
 		</div>
 	);
 }
