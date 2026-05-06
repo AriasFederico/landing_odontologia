@@ -1,0 +1,41 @@
+@use '../../config.module' as *;
+
+.CtaWhatsApp {
+    padding: $space-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 2000;
+    bottom: $space-6;
+    right: $space-2;
+    background-color: #25d466;
+    width: $space-7;
+    height: $space-7;
+    transition: all .3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &::after {
+        content: '';
+        width: $space-1;
+        height: $space-1;
+        background-color: red;
+        position: absolute;
+        border-radius: 50%;
+        top: 0;
+        right: 0;
+    }
+
+}
+
+
+
+.icon {
+    color: white;
+    width: $space-3;
+    height: $space-3;
+}

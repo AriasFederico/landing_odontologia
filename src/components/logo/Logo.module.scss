@@ -25,7 +25,7 @@
 }
 
 .logoText {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     font-family: "PlayFair Display";
    //  cambiar nombre de default
@@ -36,6 +36,10 @@
 
    &-dark {
         color: white;
+   }
+
+   &-sm {
+    font-size: $font-xl;
    }
 }
 

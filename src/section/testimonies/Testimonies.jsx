@@ -23,7 +23,7 @@ export const Testimonies = () => {
     const { title, testomies } = data;
 
     return (
-        <section className={styles.testimonies}>
+        <section className={styles.testimonies} id='testimonies'>
             <div className={styles.container}>
                 <div className={styles.content}>
                     <TopSection text={'TESTIMONIOS'} />

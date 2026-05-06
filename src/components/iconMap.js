@@ -1,11 +1,15 @@
 import {
+	BsChat,
 	BsCheck2Circle,
+	BsClock,
 	BsEmojiSmile,
 	BsFullscreen,
 	BsHeart,
+	BsPinMap,
 	BsQuote,
 	BsShield,
 	BsStar,
+	BsTelephone,
 } from 'react-icons/bs';
 
 import { TbVaccine } from 'react-icons/tb';
@@ -23,4 +27,12 @@ export const iconMap = {
 
 	// quotes
 	quote: BsQuote,
+
+	// ctaSection
+	phone: BsTelephone,
+	map: BsPinMap,
+	clock: BsClock,
+
+	// icon - whatsapp
+	bsChat: BsChat,
 };

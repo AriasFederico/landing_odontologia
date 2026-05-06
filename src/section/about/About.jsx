@@ -1,4 +1,4 @@
-import { ExpCard, Feature, Title, TopSection } from '../../components';
+import { Feature, Title, TopSection } from '../../components';
 import styles from './About.module.scss';
 
 export const About = () => {
@@ -15,8 +15,8 @@ export const About = () => {
 
 
     return (
-        <section className={styles.about}>
-            <div className={styles.container}>
+        <section className={styles.about} id='about'>
+            <div className={styles.container} >
                 <div className={styles.media}>
                     <img src={DENTIST_IMAGE} alt='' className={styles.image} />
                     <div className={styles.exp_absolute}>

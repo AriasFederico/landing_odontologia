@@ -1,15 +1,21 @@
 @use '../../config.module' as *;
 .home {
-    min-height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    
     position: relative;
-
+    padding: 8rem $space-2;
+    
     background-image: url('https://media.base44.com/images/public/69eef1a76a4842c47fa75bb0/617c12145_generated_02dc712a.png');
     background-repeat: none;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+    
+    @include for-tablet(){
+        min-height: 100vh;
+    }
 
     &__absolute {
         position: absolute;
@@ -41,7 +47,6 @@
         width: 100%;
         max-width: 1152px; // El mismo ancho que use tu Navbar
         margin: 0 auto;    // Ahora el contenedor grande está centrado, alineado con el logo
-        padding: 6rem $space-2;
         
         & > * { 
             max-width: 670px; 

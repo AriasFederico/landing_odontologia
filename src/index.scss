@@ -12,6 +12,10 @@ h1,h2,h3,h4 {
   font-family: "Playfair Display", serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a ,p {
     font-family: "Inter", serif;
 }

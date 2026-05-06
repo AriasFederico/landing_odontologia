@@ -1,0 +1,14 @@
+@use '../../config.module' as *;
+
+.svg {
+    width: 2rem;
+    height: 2rem;
+    color: $color-foreground;
+    cursor: pointer;
+}
+
+.menu {    
+    @include for-tablet(){
+        display: none;
+    }
+}

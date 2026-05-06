@@ -11,7 +11,7 @@ export const Logo = ({ logo, text, span, url, variant = 'default', size = 'md' }
 			)}
 
 			{text && (
-				<p className={`${styles.logoText} ${styles[`logoText-${variant}`]}`}>
+				<p className={`${styles.logoText} ${styles[`logoText-${variant}`]} ${styles[`logoText-${size}`]}`}>
 					{text}
 					<span className={styles.span}>{span}</span>
 				</p>

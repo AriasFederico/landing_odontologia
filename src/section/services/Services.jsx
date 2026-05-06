@@ -41,7 +41,7 @@ export const Services = () => {
     const { text, services } = data;
 
     return (
-        <section className={styles.services}>
+        <section className={styles.services} id='services'>
             <div className={styles.servicesContainer}>
                 <div className={styles.servicesContainer__header}>
                     <TopSection text={'NUESTROS SERVICIOS'} />

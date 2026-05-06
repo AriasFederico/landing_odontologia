@@ -7,12 +7,29 @@
     top: 0;
     width: 100%;
     z-index: 500;
-    padding: $space-1;
+    padding: $space-1 $space-2;
+    animation: shadow linear;
+    animation-timeline: scroll();
+    animation-range: 0 20rem;
+    animation-fill-mode: both;
+
 
     &Container {
         max-width: 1152px;
         margin: 0 auto;
         display: flex;
+        align-items: center;
         justify-content: space-between;
     }
+}
+
+@keyframes shadow {
+  from {
+  }
+  to {
+    background-color: $white;
+    box-shadow: $box-shadow;
+    backdrop-filter: blur(2px);
+    // padding: 0 $space-2;
+  }
 }

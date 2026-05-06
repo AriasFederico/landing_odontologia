@@ -1,31 +1,61 @@
 @use '../../config.module' as *;
 
 .nav {
-    padding: 16px;
-    font-size: 16px;
     // variant: bg-dark / bg-transparent = cambios más típicos
     // customClass: empresa-1 = cambios más especificos
     // ---------------------- estilos agregados abajo
+    max-height: 0;
+    overflow: hidden;
+    // customClass: empresa-1 = cambios más especificos
+    // ---------------------- estilos agregados abajo
+
+    @include for-tablet(){
+        display: flex;
+        overflow: visible;
+    }
+}
+
+.mobile {
+    display: flex;
+    max-height: 500px;
+    overflow: hidden;
+    background-color: white;
+    // border-bottom: 1px solid $color-border;
+    transition: all .4s ease-in;
+    position: absolute;
+    top: 4.6rem;
+    left: 0;
+    width: 100%;
+    padding: 2rem 1rem;
+
+    @include for-tablet(){
+        display: none;
+    }
 }
 
 .ul {
-    list-style: none;
     display: flex;
+    width: 100%;
+    flex-direction: column;
     align-items: center;
-    // ---------------------- estilos agregados abajo
+    gap: 2rem;
+    list-style: none;
 
-    // &-variant {}
+    @include for-tablet(){
+        flex-direction: row;
+    }
 }
 
 .li {
     a {
         text-decoration: none;        
         // ---------------------- estilos agregados abajo
+        font-size: 15px;
+        color: $color-foreground;
         &:visited {
         }
         &:hover {
+            color: $color-primary;
         }
     }
 }
-
-// .customClass {}
